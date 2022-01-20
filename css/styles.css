@@ -99,8 +99,6 @@ nav.desktop-menu li a{
     font-weight: 400;
 }
 
-
-
 .chamada1 {
     max-width: 600px;
     float:right;
@@ -298,8 +296,13 @@ section.sessao3{
     float: left;
     width: 40px;
     height: 40px;
+    background-image: url('../images/author-1.jpg');
+    background-size: 100% 100%;
+    position: relative;
+    top: -4px;
     background-color: blue;
-    border-radius: 50%;
+    border-radius: 20px;
+    background-color: yellowgreen;
 }
 
 .texto-autor {
@@ -334,13 +337,16 @@ section.sessao3{
 /*---- sessao4 ----*/
 
 section.sessao4{
-    background-color: #79bdee;
+    background-color: #003a63;
     padding: 100px 0;
 }
 
 .form {
     float: left;
     width: 50%;
+    padding-left: 10px;
+    color: white;
+
 }
 
 .form h2{
@@ -350,9 +356,108 @@ section.sessao4{
 }
 
 .form p{
+    color: white;
     font-size: 15px;
     font-weight: 300;
+    max-width: 400px;
+    padding-right: 10px;
+}
+
+.form form{
+    margin-top: 15px;
+}
+
+.form form input[type="text"]{
+    width: 90%;
+    max-width: 480px;
+    margin-top: 5px;
+    height: 58px;
+    padding-left: 8px;
+    line-height: 58px;
+    border: 1px solid #041C32;
+    border-radius: 4px;
+}
+
+.form form textarea{
+    width: 90%;
+    max-width: 480px;
+    margin-top: 8px;
+    padding: 8px;
+    line-height: 18px;
+    border: 1px solid #041C32;
+    height: 160px;
+    border-radius: 4px;
+}
+
+.form form input[type="submit"] {
+    background-color: #007ED9;
+    width: 165px;
+    height: 44px;
     color: white;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 30px;
+    border: none;
+}
+    
+.form form input[type="submit"]:hover{
+    background-color: #0290f5;
+}
+
+.map-wraper{
+    float: left;
+    width: 50%;
+    color: white;
+}
+
+.map-wraper h2{
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.map-wraper3 {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+}
+
+.map-wraper2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top:100%;
+}
+
+.map{
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;   
+    background-color: white;
+    border: 5px solid #031424;
+}
+
+footer{
+    padding: 40px 2%;
+    background: #000b14;
+    color: white;
+}
+
+footer p:nth-of-type(1){
+    float: left;
+    font-size: 14px;
+}
+
+footer p:nth-of-type(2){
+    float: right;
+    font-size: 14px;
+
 }
 
 @media screen and (max-width: 830px) {
@@ -432,6 +537,44 @@ section.sessao4{
         padding: 40px 2%;
     }
 
+    section.sessao4 .container{
+        text-align: center;
+    }
+
+    .form{
+        float: none;
+        width: 100%;
+    }
+
+    .form p{
+        display: inline-block;
+        float: none;
+    }
+
+    .map-wraper{
+        float: none;
+        width: 100%;
+        padding: 0 4%;
+        margin-top: 20px;
+    }
+
+    .map-wraper3 {
+        margin-top: 10px;
+        width: 80%;
+        padding-top: 80%;
+        display: inline-block;
+        max-width: none ;
+        position: relative;
+    }
+    
+    .map-wraper2{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding-top: 0;
+        height: 100%;
+    }
 }
 
 @media screen and (max-width: 580px){
@@ -448,5 +591,18 @@ section.sessao4{
     .sessao2 img{
         top: 16px;
         margin-top: 20px;
+    }
+
+    footer{
+        text-align: center;
+    }
+    
+    footer p:nth-of-type(1){
+        float: none;
+    }
+    
+    footer p:nth-of-type(2){
+        float: none;
+        margin-top:8px;
     }
 }
